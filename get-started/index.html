@@ -8,11 +8,32 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-        <title>Hello, world!</title>
+        <style>
+            .bootstrap-color
+            {
+                color: #583287;
+            }
+        </style>
+
+        <title>Hello Bootstrap!</title>
     </head>
-    <body>
+    <body style="padding-top: 50px;">
+        <div class="container-fluid p-0">
+            <!-- Jumbotron -->
+            <div class="jumbotron rounded-0">
+                <div class="container">
+                    <h1 class="display-4 bootstrap-color">Hello, Bootstrap 4!</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                </div>
+            </div>
+        </div>
+
         <div class="container">
             <!-- Typography -->
+            <h1 class="text-uppercase bootstrap-color" id="typography">Typography</h1><hr>
+
             <h1>h1. Bootstrap heading</h1>
             <h2>h2. Bootstrap heading</h2>
             <h3>h3. Bootstrap heading</h3>
@@ -133,6 +154,8 @@
 
             <hr>
             <!-- Code -->
+            <h1 class="text-uppercase bootstrap-color" id="code">Code</h1><hr>
+
             For example, <code>&lt;section&gt;</code> should be wraped as inline.
 
             <br>
@@ -156,29 +179,35 @@
             <hr>
 
             <!-- Images -->
+            <h1 class="text-uppercase" style="color:#583287" id="images">Images</h1><hr>
+
             <img src="./image1.jpg" class="img-fluid mb-3" alt="Responsive image">
 
-            <img src="./image1.jpg" class="img-thumbnail mb-3" alt="Responsive image">
-
-            <img src="./image2.jpg" alt="..." class="rounded float-left">
-            <img src="./image3.jpg" alt="..." class="rounded float-right">
-
-            <!-- Clear Float -->
-            <div class="clearfix"></div>
-            <hr>
-
-            <img src="./image4.jpg" alt="..." class="rounded mx-auto d-block">
+            <img src="./image1.jpg" class="img-thumbnail rounded-pill mb-3" alt="Responsive image">
 
             <hr>
 
-            <div class="text-center">
-                <img src="./image5.jpg" alt="" class="rounded">
-                <img src="./image6.jpg" alt="" class="rounded">
+            <!-- Quickly and easily clear floated content within a container by adding a clearfix utility -->
+            <div class="bg-light clearfix py-5 px-5">
+                <img src="./image2.jpg" alt="..." class="rounded-sm float-left">
+                <img src="./image3.jpg" alt="..." class="rounded-lg float-right">
             </div>
 
             <hr>
 
+            <img src="./image4.jpg" alt="..." class="rounded-circle mx-auto d-block">
+
+            <hr>
+
+            <div class="text-center">
+                <img src="./image5.jpg" alt="" class="rounded-right">
+                <img src="./image6.jpg" alt="" class="rounded-left">
+            </div>
+            
+            <hr>
+
             <!-- Tables -->
+            <h1 class="text-uppercase" style="color:#583287" id="tables">Tables</h1><hr>
             <table class="table">
                 <thead>
                     <tr>
@@ -741,6 +770,9 @@
 
             <hr>
 
+            <!-- Figures -->
+            <h1 class="text-uppercase bootstrap-color" id="figures">Figures</h1><hr>
+
             <figure class="figure">
                 <img src="./image7.jpg" alt="..." class="figure-img img-fluid rounded">
                 <figcaption class="figure-caption">An astonishing Camaro</figcaption>
@@ -750,7 +782,189 @@
                 <img src="./image8.jpg" alt="..." class="figure-img img-fluid rounded">
                 <figcaption class="figure-caption text-center">The Cliffs of Moher, Ireland</figcaption>
             </figure>
+
+            <hr>
+
+            <!-- Alerts -->
+            <h1 class="text-uppercase bootstrap-color" id="alerts">Alerts</h1><hr>
+
+            <div class="alert alert-primary" role="alert">
+                A simple primary alert—Check it out!
+            </div>
+            <div class="alert alert-secondary" role="alert">
+                A simple secondary alert—Check it out!
+            </div>
+            <div class="alert alert-success" role="alert">
+                A simple success alert—check it out!
+            </div>
+            <div class="alert alert-danger" role="alert">
+                A simple danger alert—check it out!
+            </div>
+            <div class="alert alert-warning" role="alert">
+                A simple warning alert—check it out!
+            </div>
+            <div class="alert alert-info" role="alert">
+                A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+            </div>
+            <div class="alert alert-light" role="alert">
+                A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+            </div>
+            <div class="alert alert-dark" role="alert">
+                A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+            </div>
+
+            <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Well done!</h4>
+                <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                <hr>
+                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+            </div>
+
+            <div class="alert alert-warning alert-dismissable fade show" role="alert">
+                <strong>Holy Guacamole!</strong> Click on the 'X' to close this alert.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span area-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <hr>
+
+            <!-- Badges -->
+            <h1 class="text-uppercase bootstrap-color" id="badges">Badges</h1><hr>
+
+            <h1>Example heading <span class="badge badge-primary">New</span></h1>
+            <h2>Example heading <span class="badge badge-secondary">New</span></h1>
+            <h3>Example heading <span class="badge badge-warning">New</span></h1>
+            <h4>Example heading <span class="badge badge-pill badge-danger">New</span></h1>
+            <h5>Example heading <span class="badge badge-pill badge-success">New</span></h1>
+            <h6>Example heading <span class="badge badge-pill badge-dark">New</span></h1>
+
+            <hr>
+
+            <button type="button" class="btn btn-primary">
+                Notifications <span class="badge badge-light">4</span>
+            </button>
+
+            <button type="button" class="btn btn-primary">
+                Profile <span class="badge badge-light">9</span>
+                <span class="sr-only">unread messages</span> <!-- consider including this to additional context for screen readers (sr) -->
+            </button>
+
+            <hr>
+
+            <!-- Buttons -->
+            <h1 class="text-uppercase bootstrap-color" id="buttons">Buttons</h1><hr>
+
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <!-- it's also possible to use the tags for links (a) and forms (inputs) -->
+            <a class="btn btn-warning" href="#" role="button">Warning</a>
+            <input class="btn btn-dark" type="submit" value="Submit">
+
+            <hr>
+
+            <button class="btn btn-danger btn-lg">Large Button</button>
+            <button class="btn btn-success btn-sm">Small Button</button>
             
+            <hr>
+            
+            <button class="btn btn-info btn-block">Block Button</button>
+
+            <hr>
+
+            <button class="btn btn-primary">Default Button</button>
+            <button class="btn btn-primary active">Active Button</button>
+            
+            <hr>
+            
+            <button class="btn btn-primary">Default Button</button>
+            <button class="btn btn-primary disabled">Disabled Button</button>
+
+            <!-- Navigation Bar -->
+            <div class="container">
+                <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="#">
+                        <img src="bootstrap-4-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                        Bootstrap
+                    </a>
+                    <!-- Mobile Navigation Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Navigation Items -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#typography">Typography</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#code">Code</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#images">Images</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tables">Tables</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#figures">Figures</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#alerts">Alerts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#badges">Badges</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#buttons">Buttons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#forms">Forms</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <hr>
+            
+            <!-- Forms -->
+            <h1 class="text-uppercase bootstrap-color" id="forms">Forms</h1><hr>
+
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email Address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id=emailHelp class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group">
+                    <select class="form-control">
+                        <option>Default select</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Example file input</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+            <hr>
         </div>
 
         <!-- Optional JavaScript -->
